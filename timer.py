@@ -11,7 +11,12 @@ elif subprocess.getoutput("locale") == 'LANG=it_IT.UTF-8\nLC_CTYPE="it_IT.UTF-8"
 elif subprocess.getoutput("locale") == 'LANG=de_DE.UTF-8\nLC_CTYPE="de_DE.UTF-8"\nLC_NUMERIC="de_DE.UTF-8"\nLC_TIME="de_DE.UTF-8"\nLC_COLLATE="de_DE.UTF-8"\nLC_MONETARY="de_DE.UTF-8"\nLC_MESSAGES="de_DE.UTF-8"\nLC_PAPER="de_DE.UTF-8"\nLC_NAME="de_DE.UTF-8"\nLC_ADDRESS="de_DE.UTF-8"\nLC_TELEPHONE="de_DE.UTF-8"\nLC_MEASUREMENT="de_DE.UTF-8"\nLC_IDENTIFICATION="de_DE.UTF-8"\nLC_ALL=':
     from translations.de import *
     import src.main
+# French
+elif subprocess.getoutput("locale") == 'LANG=fr_FR.UTF-8\nLC_CTYPE="fr_FR.UTF-8"\nLC_NUMERIC="fr_FR.UTF-8"\nLC_TIME="fr_FR.UTF-8"\nLC_COLLATE="fr_FR.UTF-8"\nLC_MONETARY="fr_FR.UTF-8"\nLC_MESSAGES="fr_FR.UTF-8"\nLC_PAPER="fr_FR.UTF-8"\nLC_NAME="fr_FR.UTF-8"\nLC_ADDRESS="fr_FR.UTF-8"\nLC_TELEPHONE="fr_FR.UTF-8"\nLC_MEASUREMENT="fr_FR.UTF-8"\nLC_IDENTIFICATION="fr_FR.UTF-8"\nLC_ALL=':
+    from translations.fr import *
+    import src.main
 # English
 else:
-    from translations.en import *
+    # from translations.en import *
+    from translations.fr import *
     import src.main
